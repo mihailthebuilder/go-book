@@ -11,10 +11,8 @@ func main() {
 
 	var s, sep string
 
-	args := os.Args
-
-	for i := 0; i < len(args); i++ {
-		s += sep + args[i]
+	for i := 0; i < len(os.Args); i++ {
+		s += sep + os.Args[i]
 		sep = " "
 	}
 
