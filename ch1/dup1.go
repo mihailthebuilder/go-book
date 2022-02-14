@@ -9,14 +9,10 @@ import (
 func main() {
 	counts := make(map[string]int)
 	input := bufio.NewScanner(os.Stdin)
-	var inputText string
 
 	for input.Scan() {
-		inputText = input.Text()
-		counts[inputText]++
-		if counts[inputText] > 2 {
-			break
-		}
+		fmt.Println("trying")
+		counts[input.Text()]++
 	}
 	// NOTE: ignoring potential errors from input.Err()
 	for line, n := range counts {
