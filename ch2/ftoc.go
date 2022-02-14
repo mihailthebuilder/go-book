@@ -15,7 +15,7 @@ func main() {
 	boilingF, freezingF := CtoF(boilingC), CtoF(freezingC)
 
 	fmt.Printf("Boiling temperature is %vC / %vF\n", boilingC, boilingF)
-	fmt.Printf("Boiling temperature is %vC / %vF\n", freezingC, freezingF)
+	fmt.Printf("Freezing temperature is %vC / %vF\n", freezingC, freezingF)
 }
 
 func CtoF(celsius float64) float64 {
