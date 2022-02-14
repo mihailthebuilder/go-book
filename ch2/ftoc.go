@@ -11,12 +11,10 @@ const BoilingC = 100.0
 const FreezingC = 0.0
 
 func main() {
-	boilingC := BoilingC
-	boilingF := CtoF(boilingC)
-	fmt.Printf("Boiling temperature is %vC / %vF\n", boilingC, boilingF)
+	boilingC, freezingC := BoilingC, FreezingC
+	boilingF, freezingF := CtoF(boilingC), CtoF(freezingC)
 
-	freezingC := FreezingC
-	freezingF := CtoF(freezingC)
+	fmt.Printf("Boiling temperature is %vC / %vF\n", boilingC, boilingF)
 	fmt.Printf("Boiling temperature is %vC / %vF\n", freezingC, freezingF)
 }
 
